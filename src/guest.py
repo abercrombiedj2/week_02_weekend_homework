@@ -1,5 +1,9 @@
 class Guest:
 
-    def __init__(self, name, cash):
+    def __init__(self, name, cash, favourite_song):
         self.name = name
         self.cash = cash
+        self.favourite_song = favourite_song
+    
+    def pay_entry_fee(self, entry_fee):
+        self.cash -= entry_fee
